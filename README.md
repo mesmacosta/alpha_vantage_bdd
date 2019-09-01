@@ -27,7 +27,7 @@ Place your Service Account at the directory: ./app/auth/batch-workload-log-writt
 
 Set your Alpha Vantage API KEY at the file ./features/environment.py
 
-Go to for instructions on getting your key: https://www.alphavantage.co/support/#api-key
+For instructions on getting your key, go to: https://www.alphavantage.co/support/#api-key
 
 ## 2. Running the test suite
 
