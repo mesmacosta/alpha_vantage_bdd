@@ -18,6 +18,17 @@ The main goal of this project is to provide a BDD approach to verify how the Alp
 
 `pip install -r requirements.txt`
 
+
+##### 1.4. Set your environment and credentials
+
+Change the file: ./execute.sh, set your Google Cloud project_id on the YOUR_PROJECT placeholder.
+
+Place your Service Account at the directory: ./app/auth/batch-workload-log-writter.json
+
+Set your Alpha Vantage API KEY at the file ./features/environment.py
+
+Go to: https://www.alphavantage.co/support/#api-key
+
 ## 2. Running the test suite
 
 ##### 2.1. Fire API tests
