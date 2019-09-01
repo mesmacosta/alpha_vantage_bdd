@@ -1,4 +1,4 @@
-# REST API for Alpha Vantage
+# Alpha Vantage BDD
 
 The main goal of this project is to provide a BDD approach to verify how the Alpha Vantage API works
 
