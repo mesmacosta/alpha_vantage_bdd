@@ -10,14 +10,14 @@ def step_impl(context):
     assert context.response
 
 
-@then('the rate should be equal or greater than the {benchmark}')
+@then('the rate should be equal or greater than the {benchmark} benchmark')
 @log_step_error
 def step_impl(context, benchmark):
     exchange_rate = list(context.response[0].values())[4]
     assert float(exchange_rate) >= float(benchmark)
 
 
-@then('the value today should be equal or greater than the {benchmark}')
+@then('the value today should be equal or greater than the {benchmark} benchmark')
 @log_step_error
 def step_impl(context, benchmark):
     today = date.today()
