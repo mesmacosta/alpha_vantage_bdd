@@ -21,4 +21,5 @@ gcloud logging write batch-workload "[$(hostname)]Output from behave cmd: $outpu
 echo "Entrypoint script execution finished."
 
 # Delete the VM
+gcp_zone=$(curl -H Metadata-Flavor:Google http://metadata.google.internal/computeMetadata/v1/instance/zone -s | cut -d/ -f4)
 gcloud compute instances delete $(hostname) --zone ${gcp_zone}
